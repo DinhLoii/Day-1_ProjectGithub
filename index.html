@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bóng đá Việt Nam</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
     <!-- Tiêu đề -->
     <header>
-        <h1>Tin Tức Bóng Đá Việt Nam</h1>
+        <div class="header">
+            <div class="header_logo">
+                <img class="header_logo_1" src="https://vpf.vn/wp-content/uploads/2018/10/1325232913.jpg" alt="logoVFF">
+            </div>
+
+            <div class="header_title">
+                <h1 class="header_title_1">Tin Tức Bóng Đá Việt Nam</h1>
+            </div>
+        </div>
+        
         <nav>
             <ul>
                 <li><a href="#gioithieu">Giới thiệu</a></li>
@@ -19,7 +29,7 @@
             </ul>
         </nav>
     </header>
-
+        
     <hr>
 
     <!-- Giới thiệu -->
@@ -92,21 +102,54 @@
     </section>
 
     <!-- Biểu mẫu -->
-    <section id="lienhe">
-        <h2>Góp ý của bạn</h2>
+    <section class="contact" id="lienhe">
+        <h2 class="header_contact">Góp ý của bạn</h2>
         <form action="#">
-            <label for="hoten">Họ tên:</label><br>
-            <input type="text" id="hoten" name="hoten"><br><br>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
+            <div class="form_contact">
+                <label for="hoten">Họ tên:</label><br>
+                <input type="text" id="hoten" name="hoten" placeholder="Enter your name"><br><br>
 
-            <label for="phanhoi">Ý kiến:</label><br>
-            <textarea id="phanhoi" name="phanhoi"></textarea><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+                <label for="phanhoi">Ý kiến:</label><br>
+                <textarea id="phanhoi" name="phanhoi" placeholder="Enter your requitement"></textarea><br><br>
+            </div>
+            
+            <div class="radio_check_contact">
+            <!-- Radio Button -->
+                <label for="checkGT">Giới Tính:</label>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="lgbt">LGBT</label>
+                <input type="radio" id="lgbt" name="gender" value="LGBT"> <br>
+            </div>
+
+            <!-- Checkbox Button -->
+             <label for="CheckG">Điểm:</label>
+             <label for="muoi">10</label>
+             <input type="checkbox" id="muoi" name="grade" value="muoi">
+             <label for="chin">9</label>
+              <input type="checkbox" id="chin" name="grade" value="chin">
+             <label for="tam">8</label>
+             <input type="checkbox" id="tam" name="grade" value="tam"> <br>
+            
+            <!-- Drop down -->
+            <select name="" id="">
+                <option value="">VietNamese</option>
+                <option value="">ThaiLand</option>
+            </select><br>
 
             <input type="submit" value="Gửi">
-            <input type="reset" value="Xóa">
+            <input type="reset" value="Xóa"><br>
+
+            
+
         </form>
+
     </section>
 
     <!-- Footer -->

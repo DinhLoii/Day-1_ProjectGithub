@@ -1,0 +1,54 @@
+.header {
+    width: 100%;
+    display: flex;
+}
+
+.header_title_1 {
+    color: red;
+    width: 48%
+}
+
+.header_logo_1 {
+    width: 48%;
+}
+
+.contact {
+    border: 3px solid;
+    border-radius: 5%;
+    width: 26%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+.header_contact {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 100%;
+}
+
+.form_contact {
+    width: 100%;
+    max-width: 600px; /* giữ bố cục gọn gàng */
+    margin: 0 auto;   /* căn giữa khối form */
+}
+
+.form_contact input,
+.form_contact textarea {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.form_contact textarea {
+    height: 80px; /* tăng chiều cao cho khung ý kiến */
+    resize: vertical; /* cho phép người dùng co kéo chiều cao */
+}
+
+
+.radio_check_contact{
+    padding-bottom: 5%;
+}
+
