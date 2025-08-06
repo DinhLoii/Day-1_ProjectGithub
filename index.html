@@ -1,78 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bóng đá Việt Nam</title>
 </head>
 <body>
-    
-    <h1>WED201c_Day-1</h1>
-    <div class="title1.1">
-        <h2>I.Các Thẻ cơ bản</h2>
-        <p>Paragram: Xác định 1 đoạn văn</p> 
-        <br></br>
-    </div>
-    
-    <div class="main1.1">
-        <h2>II.Thẻ Formatting</h2>    
-    
-    </div> 
 
-    <div class="part1">
-        <p>Thẻ img</p>
-        <img src="https://th.bing.com/th/id/R.26de8446c3639024c7ddaf27f6a22fae?rik=GtdAjIew7s%2fteQ&pid=ImgRaw&r=0" alt="">
-        <p>Có thể dùng ảnh trên máy tính thông qua folder</p>
-        <img src="images/996613-Dragon-Ball-Super-Dragon-Ball-Son-Goku-Super-Saiyajin-Blue.png" alt="">
-        <p>Thẻ a: LINK</p>
-        <a href="https://classroom.google.com/h">GGClassRoom</a>
-    </div>
-    
-    <div class="part2">
-        <div>
-            <p>Thẻ ul: Tạo list không có thứ tự</p>
+    <!-- Tiêu đề -->
+    <header>
+        <h1>Tin Tức Bóng Đá Việt Nam</h1>
+        <nav>
+            <ul>
+                <li><a href="#gioithieu">Giới thiệu</a></li>
+                <li><a href="#cauthu">Cầu thủ nổi bật</a></li>
+                <li><a href="#lichthidau">Lịch thi đấu</a></li>
+                <li><a href="#lienhe">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Giới thiệu -->
+    <section id="gioithieu">
+        <h2>Giới thiệu</h2>
+        <p><strong>Bóng đá</strong> là môn thể thao vua được yêu thích nhất tại Việt Nam. Đội tuyển quốc gia đã có nhiều tiến bộ đáng kể trong những năm gần đây.</p>
+        <blockquote>"Chơi bóng không chỉ là chiến thắng, mà còn là đam mê và tinh thần dân tộc." - Một CĐV cuồng nhiệt</blockquote>
+        <abbr title="Liên đoàn bóng đá Việt Nam">VFF</abbr> là đơn vị tổ chức các giải đấu chuyên nghiệp trong nước.
+    </section>
+
+    <!-- Hình ảnh -->
+    <section>
+        <h2>Khoảnh khắc đáng nhớ</h2>
+        <img src="https://cdn.giaoducthoidai.vn/images/14a20d878203bc7982c0b45fc912a81b794b6ac953583a15febae35e020c5798ad15c0348ef02860e1203dba9c6e080a0bd9d07597004dc03a9580aa6665f2aa/vo-dich-1-17538085159212040101041.jpg" alt="Khoảnh khắc bóng đá">
+        <figcaption>Hình ảnh đội tuyển Việt Nam ăn mừng chiến thắng</figcaption>
+    </section>
+
+    <!-- Cầu thủ -->
+    <section id="cauthu">
+        <h2>Cầu thủ nổi bật</h2>
         <ul>
-            <li>Đinh Văn Lợi</li>
-            <li>Lý Thanh Hải</li>
-            <li>Nguyễn Trần Tiến</li>
+            <li>Quang Hải</li>
+            <li>Công Phượng</li>
+            <li>Đoàn Văn Hậu</li>
         </ul>
-        </div>
-        
-        <div>
-            <p>Thẻ ol: Tạo list có thứ tự</p>
-            <ol>
-            <li>Đinh Văn Lợi</li>
-            <li>Lý Thanh Hải</li>
-            <li>Nguyễn Trần Tiến</li>
-            </ol>
-        </div>
+        <details>
+            <summary>Thành tích của Quang Hải</summary>
+            <p>Ghi bàn tại nhiều giải đấu lớn, nổi bật nhất là AFF Cup và Asian Cup.</p>
+        </details>
+    </section>
 
-    </div>
-
-    <div class="part3">
-        <h1>III.Table</h1>
-        <p>Thẻ table: Tạo ra 1 table</p>
-        <p>Thẻ tr: tạo ra 1 cái row</p>
-
+    <!-- Lịch thi đấu -->
+    <section id="lichthidau">
+        <h2>Lịch thi đấu</h2>
         <table border="1">
             <tr>
-                <td>STT</td>
-                <td>NAME</td>
-                <td>SDT</td>
+                <th>Ngày</th>
+                <th>Trận đấu</th>
+                <th>Địa điểm</th>
             </tr>
             <tr>
-                <td>1</td>
-                <td>Đinh Văn Lợi</td>
-                <td>0961931...</td>
+                <td>20/08/2025</td>
+                <td>Việt Nam vs Thái Lan</td>
+                <td>Sân Mỹ Đình</td>
             </tr>
             <tr>
-                <td>2</td>
-                <td>Lý Thanh Hải</td>
-                <td>0964981...</td>
+                <td>27/08/2025</td>
+                <td>Việt Nam vs Malaysia</td>
+                <td>Sân Thống Nhất</td>
             </tr>
         </table>
+    </section>
 
-    </div>
+    <!-- Video -->
+    <section>
+        <h2>Video bàn thắng</h2>
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+        </video>
+    </section>
+
+    <!-- Audio -->
+    <section>
+        <h2>Bình luận viên huyền thoại</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+            Trình duyệt không hỗ trợ thẻ audio.
+        </audio>
+    </section>
+
+    <!-- Biểu mẫu -->
+    <section id="lienhe">
+        <h2>Góp ý của bạn</h2>
+        <form action="#">
+            <label for="hoten">Họ tên:</label><br>
+            <input type="text" id="hoten" name="hoten"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="phanhoi">Ý kiến:</label><br>
+            <textarea id="phanhoi" name="phanhoi"></textarea><br><br>
+
+            <input type="submit" value="Gửi">
+            <input type="reset" value="Xóa">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p>&copy; 2025 Tin tức Bóng đá Việt Nam. Mọi quyền được bảo lưu.</p>
+        <address>Liên hệ: dinhvanloi000@gmail.com</address>
+    </footer>
 
 </body>
 </html>
